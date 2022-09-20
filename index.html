@@ -14,13 +14,76 @@
             <option value="AL">AL</option>
             <option value="CA">CA</option>
             br><b>
-              <input type="submit" value="Total" /> 
+              <input type="submit" value="Totalizar" /> 
               </br></b>
         </select>
     </form>
-    <br><label><strong>Precio neto: </strong><label id="precio"></label></label>
     <br>
+    <label><strong>Precio neto: </strong><label id="precio"></label>
+    </label>
+    <strong>Descuento: %</strong><label id="descuento"></label>
+    <br><label><strong>Impuesto: </strong><label id="impuesto"></label></label>
+    <strong>Precio total descuento e impuesto:</strong><label id="total"></label>
+    <br>
+    <label><strong>Impuestos por Estado </strong></label>
+    <br>
+    <table> 
+        <tr>
+            <th>Estado</th>
+            <th>Tasa de Impuesto</th>
+        </tr>
+        <tr>
+            <td>UT</td>
+            <td>6.65%</td>
+        </tr>
+        <tr>
+            <td>NV</td>
+            <td>8.00%</td>
+        </tr>
+        <tr>
+            <td>TX</td>
+            <td>6.25%</td>
+        </tr>
+        <tr>
+            <td>AL</td>
+            <td>4.00%</td>
+        </tr>
+        <tr>
+            <td>CA</td>
+            <td>8.25%</td>
+        </tr>
+    </table>
+    <label style="color: blue;">
+        <strong>Descuentos </strong>
+    </label>
+    <br>
+    <table>
+        <tr>
+            <th>Total de la Orden</th>
+            <th>Tasa de descuento</th>
+        </tr>
+        <tr>
+            <td>1000</td>
+            <td>3%</td>
+        </tr>
+        <tr>
+            <td>3000</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>7000</td>
+            <td>7%</td>
+        </tr>
+        <tr>
+            <td>10000</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>30000</td>
+            <td>15%</td>
+        </tr>
+    </table>
 
-    <script type="module" src="./src/Funcionalidades.js"></script>
+    <script src="./src/Funcionalidades.js"></script>
   </body>
 </html>
